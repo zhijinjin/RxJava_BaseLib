@@ -1,11 +1,85 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="BaseAppTheme" />
+
+    <style name="BaseAppTheme" parent="BaseAppTheme.NoActionBar" />
+
+    <style name="BaseAppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionMenuTextColor">#ccffffff</item>
+        <!--<item name="styleLoadingLayout">@style/LoadingLayoutStyle</item>-->
+        <!--<item name="android:actionMenuTextAppearance">@style/ActionMenuTextAppearance</item>-->
+        <!--<item name="android:popupMenuStyle">@style/OverflowMenuStyle</item>-->
     </style>
+
+
+    <style name="ActionMenuTextAppearance" parent="@android:style/TextAppearance.Holo.Large">
+        <item name="android:textColor">@android:color/holo_blue_light</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="AppTheme.Toolbar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+
+    <style name="OverflowMenuStyle" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:paddingRight">5dp</item>
+        <!-- 弹出层背景颜色 -->
+        <item name="android:popupBackground">@android:color/darker_gray</item>
+        <!-- 弹出层垂直方向上的偏移，即在竖直方向上距离Toolbar的距离，值为负则会盖住Toolbar -->
+        <item name="android:dropDownVerticalOffset">5dp</item>
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">-50dp</item>
+        <!-- 设置弹出菜单文字颜色 -->
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gradientRadius">15dp</item>
+        <item name="android:radius">50dp</item>
+
+    </style>
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <style name="Title_Appearance" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title">
+
+    </style>
+
+    <style name="Subtitle_Appearance" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+
+
+    <!-- 弹窗Dialog样式 -->
+    <style name="PasswordDialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
 
 </resources>

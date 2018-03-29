@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">BaseLibrary</string>
     <string name="title_activity_base">BaseActivity</string>
+
+    <string name="just_now">刚刚</string>
+    <string name="a_min_ago">一分钟前</string>
+    <string name="mins_ago">" 分钟前"</string>
+    <string name="a_hour_ago">一小时前</string>
+    <string name="yesterday">昨天</string>
+    <string name="days_ago">" 天前"</string>
+    <string name="week_ago">" 周前"</string>
+    <string name="weeks_ago">" 周前"</string>
 </resources>

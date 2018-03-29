@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IndicatorView">
+        <attr name="marker" format="reference" />
+        <attr name="indicatorValue" format="integer" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="intervalSize" format="dimension" />
+        <attr name="indicatorStrings" format="integer" />
+        <attr name="indicatorColors" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleView">
+        <attr name="titleViewText" format="string|reference" />
+        <attr name="titleViewTextSize" format="dimension" />
+        <attr name="titleViewTextColor" format="color|reference" />
+        <attr name="titleViewBackground" format="color|reference" />
+        <attr name="titleViewLineColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ParticleView">
+        <attr name="pv_host_text" format="string"></attr>
+        <attr name="pv_host_text_size" format="dimension"></attr>
+        <attr name="pv_particle_text" format="string"></attr>
+        <attr name="pv_particle_text_size" format="dimension"></attr>
+        <attr name="pv_text_color" format="color"></attr>
+        <attr name="pv_background_color" format="color"></attr>
+        <attr name="pv_text_anim_time" format="integer"></attr>
+        <attr name="pv_spread_anim_time" format="integer"></attr>
+        <attr name="pv_host_text_anim_time" format="integer"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="TitleToolbar">
+        <attr name="titleVisible" format="boolean" />
+        <attr name="titleTextSize" format="dimension" />
+
+        <attr name="subtitleVisible" format="boolean" />
+        <attr name="subtitleTextSize" format="dimension" />
+
+        <attr name="title_gravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="fill_horizontal" value="0x07" />
+            <flag name="center" value="0x11" />
+            <flag name="fill" value="0x77" />
+            <flag name="clip_vertical" value="0x80" />
+            <flag name="clip_horizontal" value="0x08" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+
+        <attr name="closeVisible" format="boolean" />
+        <attr name="closeText" format="string" />
+        <attr name="closeTextAppearance" format="reference" />
+        <attr name="closeTextColor" format="color" />
+        <attr name="closeTextSize" format="dimension" />
+
+        <attr name="backVisible" format="boolean" />
+        <attr name="backText" format="string" />
+        <attr name="backTextAppearance" format="reference" />
+        <attr name="backTextColor" format="color" />
+        <attr name="backTextSize" format="dimension" />
+        <attr name="backIcon" format="reference" />
+        <attr name="backMarginRight" format="dimension" />
+
+        <attr name="rightVisible" format="boolean" />
+        <attr name="rightText" format="string" />
+        <attr name="rightTextAppearance" format="reference" />
+        <attr name="rightTextColor" format="color" />
+        <attr name="rightTextSize" format="dimension" />
+        <attr name="rightIcon" format="reference" />
+        <attr name="rightMarginRight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="PinCodeView">
+        <attr name="lp_empty_pin_dot" format="integer" />
+        <attr name="lp_full_pin_dot" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="KeyboardButtonView">
+        <attr name="lp_keyboard_button_text" format="string" />
+        <attr name="lp_keyboard_button_image" format="integer" />
+        <attr name="lp_keyboard_button_ripple_enabled" format="boolean" />
+        <attr name="lp_pin_forgot_dialog_title" format="string" />
+        <attr name="lp_pin_forgot_dialog_content" format="string" />
+        <attr name="lp_pin_forgot_dialog_positive" format="string" />
+        <attr name="lp_pin_forgot_dialog_negative" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="DownloadProgressButton">
+        <attr name="progress_btn_radius" format="dimension" />
+        <attr name="progress_btn_background_color" format="color" />
+        <attr name="progress_btn_background_second_color" format="color" />
+        <attr name="progress_btn_text_color" format="color" />
+        <attr name="progress_btn_text_cover_color" format="color" />
+        <attr name="progress_btn_border_width" format="dimension" />
+        <attr name="progress_btn_ball_style" format="enum">
+            <enum name="STYLE_BALL_PULSE" value="1" />
+            <enum name="STYLE_BALL_JUMP" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="StateButton">
+
+        <!--text color-->
+        <attr name="normalTextColor" format="color|reference"/>
+        <attr name="pressedTextColor" format="color|reference"/>
+        <attr name="unableTextColor" format="color|reference"/>
+
+        <!--stroke width and color, dash width, dash gap-->
+        <attr name="strokeDashWidth" format="dimension|reference"/>
+        <attr name="strokeDashGap" format="dimension|reference"/>
+        <attr name="normalStrokeWidth" format="dimension|reference"/>
+        <attr name="pressedStrokeWidth" format="dimension|reference"/>
+        <attr name="unableStrokeWidth" format="dimension|reference"/>
+        <attr name="normalStrokeColor" format="color|reference"/>
+        <attr name="pressedStrokeColor" format="color|reference"/>
+        <attr name="unableStrokeColor" format="color|reference"/>
+
+        <!--background color-->
+        <attr name="normalBackgroundColor" format="color|reference"/>
+        <attr name="pressedBackgroundColor" format="color|reference"/>
+        <attr name="unableBackgroundColor" format="color|reference"/>
+
+        <!--background radius-->
+        <attr name="sb_radius" format="dimension|reference"/>
+        <attr name="round" format="boolean|reference"/>
+
+        <!--animation duration-->
+        <attr name="animationDuration" format="integer|reference"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="StateImageView">
+        <attr name="normalBackground" format="color|reference"/>
+        <attr name="pressedBackground" format="color|reference"/>
+        <attr name="unableBackground" format="color|reference"/>
+
+        <!--animation duration-->
+        <attr name="AnimationDuration" format="integer|reference"/>
+    </declare-styleable>
+
+</resources>

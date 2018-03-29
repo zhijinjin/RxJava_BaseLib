@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+
+    <com.zjj.widgetlibrary.toolbar.TitleToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolBarHeight"
+        android:background="@mipmap/toolbar"
+        android:paddingTop="@dimen/toolBarPaddingTop"
+        android:fitsSystemWindows="true"
+        app:backIcon="@mipmap/back"
+        app:backText="@string/back"
+        app:backTextAppearance="?attr/actionMenuTextAppearance"
+        app:backTextColor="@android:color/white"
+        app:backVisible="true"
+        app:closeText="@string/close"
+        app:closeTextAppearance="?attr/actionMenuTextAppearance"
+        app:closeTextColor="@android:color/white"
+        app:closeVisible="true"
+        app:subtitle="副标题"
+        app:subtitleTextAppearance="@style/Subtitle_Appearance"
+        app:subtitleVisible="true"
+        app:title="@string/title"
+        app:titleTextAppearance="@style/Title_Appearance"
+        app:titleTextColor="@android:color/white"
+        app:title_gravity="center"
+        app:rightText="保存"
+        app:rightTextAppearance="?attr/actionMenuTextAppearance"
+        app:rightTextColor="@android:color/white"
+        app:rightVisible="true"
+        app:rightMarginRight="16dp"
+        />
+
+</android.support.design.widget.AppBarLayout>
